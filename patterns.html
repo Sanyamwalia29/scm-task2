@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python project.</title>
+    <link rel="stylesheet" href="saurav.css">
+    <style>
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        } 
+        div {
+                width: 800px;
+                padding: 100px;
+                border: 10px solid rgb(0, 97, 0);
+                border-radius: 12px;
+                margin: 10px;
+              } 
+            body {
+            background-image: url('https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701763734.jpg');
+            color: #ffffff;
+            }
+            .navbar{
+              background-color: black;  
+              border-radius: 30px;
+            }
+            .navbar ul{
+                overflow: auto; 
+            }
+            .navbar li{           
+                float: left;
+                list-style: none;
+                margin: 13px 20px;
+            }
+            .navbar li a{
+                padding: 3px 3px;
+                text-decoration: none;
+                color: white;
+            } 
+            .search{
+                float: right;
+                color: white;
+                padding: 12px 75px;
+            }
+            .navbar input{
+                border: 2px solid black;
+                border-radius: 15px;
+                padding: 3px 19px;
+                width: 200 px;
+            }
+            .navbar a:hover{
+                color:  red;
+            }
+           
+              p {
+                font-family: 'Times New Roman', Times, serif;
+              }
+              p{
+                font-size: large;
+                font-weight: bold;
+              }
+            #firstpara{
+                color: rgb(0, 45, 128);
+            }
+            #secondpara{
+                color: rgb(255, 255, 255);
+            }
+            #firstpara{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            img {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            } 
+            .search {
+                width: 400px;
+                padding: 10px;
+                border: 3px solid rgb(0, 97, 0);
+                border-radius: 12px;
+                margin: 10px;
+            }
+        </style>
+</head>
+<body>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <div class="search">
+                    Search:-&nbsp<input type="text" id="search" id="search" placeholder="Search this website">
+                </div>
+                </ul>
+            </nav>
+        </header>
+    </body>
+</html>`
+<html>
+  <head>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Python.</h1>
+    <h3 style="text-align: center;">Patterns in python.</h3>
+    <p id="firstpara" style="padding: 20px; border: 5px solid rgb(3, 4, 82);">"But most importantly: know when to be inconsistent – sometimes the style guide just doesn’t apply. When in doubt, use your best judgment. Look at other examples and decide what looks best. And don’t hesitate to ask!"</p> 
+    <p id="secondpara"style="text-align:left">Patterns can be printed in python using simple for loops. First outer loop is used to handle number of rows and Inner nested loop is used to handle the number of columns. Manipulating the print statements, different number patterns, alphabet patterns or star patterns can be printed. </p>
+    <body>
+        <div class="container">
+            <h3>Types of patterns.</h3>
+            <p id="first"><ul>
+                <li>Number pattern </li>
+                <li>Star (*) or asterisk pattern</li>
+                <li>Pyramid pattern</li>
+                <li>Inverted pyramid pattern</li>
+                <li>Half pyramid pattern</li>
+                <li>Diamond Shaped pattern</li>
+                <li>Characters or alphabets pattern</li>
+                <li>Square pattern</li>
+              </ul></p>
+        </div>
+        </br>
+        <div class="container">
+            <h3>Why are they used?</h3>
+            <p id="second">Design Patterns is the most essential part of Software Engineering, as they provide the general repeatable solution to a commonly occurring problem in software design. They usually represent some of the best practices adopted by experienced object-oriented software developers</p>
+        </div>
+        </br>
+    
+        <div class="container">
+            <h3>How to print patterns?</h3>
+             <p id="third">How to print pattern in Python
+                In Python, for loop is used to print the various patterns. Printing the various patterns are most common asked programming questions in the interview. The multiple for loops are used to print the patterns where the first outer loop is used to print the number of rows, and the inner loop is used to print the number of columns. Most of the patterns use the following concepts.
+                
+                The outer loop to print the number of rows.
+                The inner loops to print the number of columns.
+                The variable to print whitespace according to the required place in Python.
+                In this tutorial, we will discuss a few common patterns.</p>
+        </div>
+            <P>
+             <h2>steps to create pattern.</h2>
+             <p>Use the below steps to print pattern in Python:-</p>
+             </br></br>
+
+                There is a typical structure to print any pattern, i.e., the number of rows and columns. We need to use two loops to print any pattern, i.e., use nested loops.
+                
+                The outer loop tells us the number of rows, and the inner loop tells us the column needed to print the pattern.
+                
+                Accept the number of rows from a user using the input() function to decide the size of a pattern.
+             </br></br>
+         
+                <strong>Iterate rows:-</strong>
+             </br></br>
+        
+                Next, write an outer loop to Iterate the number of rows using a for loop and range() function.
+             </br></br>
+            
+                <strong>Iterate columns:-</strong>
+             </br></br>
+        
+                Next, write the inner loop or nested loop to handle the number of columns. The internal loop iteration depends on the values of the outer loop.
+                </br> </br>
+             
+                
+                <strong>Print star or number:-</strong> 
+             </br></br>
+        
+                Use the print() function in each iteration of nested for loop to display the symbol or number of a pattern (like a star (asterisk *) or number).
+                
+                Add new line after each iteration of outer loop
+                Add a new line using the print() function after each iteration of the outer loop so that the pattern display appropriately</p>
+            <fieldset>
+            <table>
+            <legend>PRACTICE QUESTIONS:-</legend>
+            <td><b>Question 1:</b></td>
+            <td>What will the code for following problem?
+                <img src="https://cdn.educba.com/academy/wp-content/uploads/2019/09/caracter-partten-output6.png" alt="">
+            <br>
+            <br>
+            </td>
+            <td>
+            <abv title="Career Labs"><input type="button" value="Solution"></abv>
+            </td>
+            </table>
+            </fieldset> 
+            <img src='https://img-blog.csdnimg.cn/2020121323350238.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1hZMDkxOFpXUQ==,size_16,color_FFFFFF,t_70' alt="">    
+    </html><style>
+</style></body>
+</html>

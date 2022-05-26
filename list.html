@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            List
+        </title>
+        <link href="intro.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Lists <img id="img1" src="https://mpng.subpng.com/20180811/pul/kisspng-python-general-purpose-programming-language-comput-python-programming-language-symphony-solution-5b6ee0c863a5a1.6306397415339931604082.jpg"></h1>
+        <hr>
+        <h3>Introduction</h3>
+        <p>A list is a standard data type of Python that can store a sequence of values
+            belonging to any type. The Lists are contained within square brackets ( [ ] ).
+            Following are some examples of lists in Python:
+            <br>
+            [ ] #Empty list
+            <br>
+            [1, 2, 5.6, 9.8] #List of numbers (Floating point and Integers)
+            <br>
+            ['a', 1, 4.3, "Zero"] #List of mixed data types
+            </p>
+            <h3>Creating Lists</h3>
+            <P>
+                In Python programming, a list is created by placing all the items (elements) inside
+square brackets [ ], separated by commas.
+It can have any number of items and they may be of different types (integer, float,
+string etc.).
+            </P>
+            <h3>
+                Operations On Lists
+            </h3>
+            <header>Accessing Elements in a List</header>
+            <p>
+                List indices start at 0 and go on till 1 less than the length of the list. We can use the
+                index operator [ ] to access a particular item in a list. Eg.
+                <br>
+            <img src="data:image/png;base64,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" >
+            <br>
+            Note: Trying to access indexes out of the range (0 ,lengthOfList-1), will raise an
+            IndexError. Also, the index must be an integer. We can't use float or other types,
+            this will result in TypeError.
+            <br>
+            Let us take an example to understand how to access elements in a list:
+l1 = ['Mother', 'Father', 'Daughter', 10, 23]
+<br>>> print(l1[0]) #Output: 'Mother'
+<br>>> print(l1[2]) #Output: 'Daughter'
+<br>>> print(l1[4]) #Output: 23
+
+
+            </p>
+            <header>Negative Indexing</header>
+            <p>
+                Python allows negative indexing for its sequences. The index of -1 refers to the last
+item, -2 to the second last item, and so on. The negative indexing starts from the
+last element in the list.
+            </p>
+            <header>
+                Changing Elements of a List
+
+            </header>
+            <p>
+                Once a list is created, we can even change the elements of the list. This is done by
+using the assignment operator (=) to change the value at a particular list index. This
+can be done as follows:
+<br>
+l1 = ['Mother', 'Father', 'Daughter', 10, 23]
+<br>
+l1[-1] = "Daughter" #Changing the last element to "Daughter"
+<br>
+L1[3] = 12 #Changing the element at index 3 to 12
+<br>
+
+print(l1)
+<br>
+Output:
+<b>['Mother', 'Father', 'Daughter', 12, "Daughter"]</b>
+<br>
+<h3>Concatenation of Lists</h3>
+<p>
+    Joining or concatenating two list in Python is very easy. The concatenation operator (+), can
+be used to join two lists.
+<br>
+l1= [1,2,3] #First List
+<br>
+l2= [3,4,5] #Second List
+<br>
+l3= l1+l2 #Concatenating both to get a new list
+<br>
+print(l3)
+<br>
+Output:
+<br>
+<b>[1,2,3,3,4,5]</b>
+<br>
+Note: The + operator when used with lists requires that both the operands are of
+list types. You cannot add a number or any other value to a list
+<h3>List Slicing</h3>
+<p>
+    List slicing refers to accessing a specific portion or a subset of a list while the
+original list remains unaffected. You can use indexes of list elements to create list
+slices as per the following syntax:
+<br>
+slice= <List Name>[StartIndex : StopIndex : Steps]
+    <br>
+    Here is a basic example of list slicing.
+    <br>
+L = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']
+<br>
+print(L[2:7])
+<br>
+we get the output as:
+<br>
+['c', 'd', 'e', 'f', 'g']
+</p>
+<h3>Reversing a List</h3>
+<br>
+<p>
+You can reverse a list by omitting both StartIndex and StopIndex and specifying
+steps as -1.
+<br>
+L = ['a', 'b', 'c', 'd', 'e']
+<br>
+print(L[::-1])
+<br>
+Output:
+<br>
+<b>['e', 'd', 'c', 'b', 'a'] #Reversed List</b></p>
+<p>
+<h3>List Methods</h3>
+</p>
+<header>append(): </header>
+<p>
+    Used for appending/adding elements at the end of a list.
+    <b>Syntax:</b>
+    <ListName>.append(element)
+    <br>
+    <b>Example:</b>
+    <br> 
+    >>> li=[1,2,3,4]
+    <br>
+    >>> li.append(5) #Append 5 to the end of the list
+    <br>
+    >>> li
+    <br>
+    [1,2,3,4,5]   
+    </p>
+    <p>
+        <b>extend():</b>
+        Adds the contents of List2 to the end of List1.
+        <br>
+        <b>Syntax:</b>
+        <ListName1>.extend(<ListName2)
+        <br>
+        <b>Example:</b>
+        <br>
+        >>> l1=[1,2,3,4]
+        <br>
+        >>> l2=[5,6,7,8]
+        <br>
+        >>> l1.extend(l2) #Adds contents of l2 to l1 at the end
+        <br>
+        >>> l1
+        <br>
+        [1,2,3,4,5,6,7,8]
+        </p>
+        <p>
+            <b>insert():</b>
+            : Inserts an element at a specified position/index in a list
+            <br>
+            <b>Syntax:</b>
+            <ListName>(position, element)
+            </p>
+            <p>
+                <b>sum() :</b>
+                Returns the sum of all the elements of a List. (Used only for lists containing
+                numerical values)
+                <br>
+                <b>Syntax:</b>
+                sum(<ListName>)
+                </p>
+                <p>
+                    <b>count():</b>
+                    : Returns the total number of times a given element occurs in a list
+                    <br>
+                    <b>Syntax:</b>
+                    <ListName>.count(element)
+                    </p>
+                    <p>
+                        <b>len(): </b>
+                        Returns the total length of a List
+                        <br>
+                        <b>Syntax:</b>
+                        len(<ListName>)
+                    </p>
+                    <p>
+                        <b>index():</b>
+                        Returns the index of first occurrence of an element in a list. If element is
+                        not present, it returns -1.
+                        <br>
+                        <b>Syntax:</b>
+                        <ListName>.index(element)
+                    </p>
+                    <p>
+                        <b>min() :</b>
+                        Returns the minimum element in a List.
+                        <br>
+                        <b>Syntax:</b>
+                        min(<ListName>)
+                    </p>
+                    <p>
+                        <b>max(): </b>
+                        Returns the maximum element in a List.
+                        <br>
+                        <b>Syntax:</b>
+                        max(<ListName>)
+                    </p>
+                    <p>
+                        <b>pop():</b>
+                        It deletes and returns the element at the specified index. If we don't mention
+the index, it by default pops the last element in the list.
+                    <br>
+                    <b>Syntax:</b>
+                    <ListName>.pop([index])
+                    </p>
+                    <p>
+                        <b>del() :</b>
+                        Element to be deleted is mentioned using list name and index
+                        <br>
+                        <b>Syntax:</b>
+                        del <ListName>[index]
+                    </p>
+                    <p>
+                        <b>remove():</b>
+                        : Element to be deleted is mentioned using list name and element.
+                        <br>
+                        <b>Syntax:</b>
+                        <ListName>.remove(element)
+                    </p>
+                    <h3>Looping On Lists</h3>
+                    <p>
+                        There are multiple ways to iterate over a list in Python.
+                        <br>
+                        Using for loop
+    
+                            li = [1, 3, 5, 7, 9]
+                            <br>
+# Using for loop
+<br>
+for i in li:
+<br>
+print(i) #Print the element in the list
+<br>
+<b>Output:</b>
+<br>
+1
+3
+5
+7
+9
+<br>
+You can even use while() loops. Try using the while() loops on your own.
+                        </p>
+                        <p>
+                        Taking Lists as User Inputs
+                        There are two common ways to take lists as user inputs. These are:
+                        <ul>
+                            <li>Space Separated Input of Lists</li>
+                            <li>Line Separated Input of Lists</li>
+                        </ul>
+                        </p>
+</p>
+</body>
+</html>

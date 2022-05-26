@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Strings</title>
+    <LINK HREF="intro.css" rel="stylesheet">
+    <style>
+                   nav{
+    display: flex;
+    position: fixed;
+    background-color: black;
+    color: white;
+    height:3.8vw;
+    width:100%
+}
+#im{background-image: url("https://coolwallpapers.me/picsup/2919503-code-programming___mixed-wallpapers.jpg");
+}
+input[type="submit"]:hover{
+    background-color: blueviolet;
+}
+input[type="text"]:hover{
+    background-color: blue;
+    font-weight: bolder;
+}
+input[type="text"]{
+    background-color: orange;
+    color:white
+}
+.curri{
+    color: white;
+    text-decoration: none;
+}
+.curri:hover{
+    color:orange
+}
+    </style>
+</head>
+<body>
+    <nav id="nav" style="display: flex; align-items: center; justify-content: space-between;">
+        <div style="font-size: 30px;">
+            <table style="background-color: white;">
+            <tr style="color:red">
+            <td rowspan="2" >C</td>
+            <td></td>
+            </tr>
+            <tr>
+                <td  style="color: black">oding School</td>
+            </tr>
+        </table>
+        </div>
+        <div>
+            <a href="homepage.html" class="curri"> HOME </a>
+        </div>
+        <diV>
+            <a class="curri" href="form2.html">
+                LOGIN
+            </a>
+        </diV>
+        <div>
+            <a  href="form.html" id="join">
+            <input type="text" value="Enrol now"  style="text-align:center; width:300px; height: 40px; cursor: pointer;" disabled>
+            </a>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <h1>STRINGS <img src="https://www.321webmarketing.com/wp-content/uploads/2018/06/Python-language-symbol.jpg" id="img1"></h1>
+    <hr>
+    <h3>Introduction</h3>
+    <ul style="display: inline-block;">
+        <li>A character is simply a symbol. For example, the English language has 26 characters;
+            while a string is a contiguous sequence of characters.</li>
+        <li>In Python, a string is a sequence of Unicode characters.</li>
+        <li>Python strings are immutable, which means they cannot be altered after they are
+            created.
+        </li>
+    </ul>
+    <p style="display:inline-block; width: 30%; background-color: skyblue; position: absolute; right:0px;">
+        <b>Note:</b> Unicode was introduced to include every character in all languages and bring
+uniformity in encoding. You can learn more about Unicode from Python Unicode. Given
+below are some examples of Unicode Encoding:<br>
+string =<b>'pythön!'</b> → Default UTF-8 Encoding:<b> b'pyth\xc3\xb6n!'</b><br>
+string =<b>'python!'</b>→ Default UTF-8 Encoding:<b> b'python!'</b><br>
+    </p>
+    <h3>
+        How to create a String in python?
+    </h3>
+    <p>
+        Strings can be created by enclosing a sequence of characters inside a single quote or
+double-quotes.<br>
+# Defining strings in Python<br>
+# Both of the following are equivalent<br>
+<b>
+s1 = <b>'Hello'</b><br>
+print(s1)<br>
+s2 = <b>"Hello"</b><br>
+print(s2)<br>
+<section id="code">
+<b>Output:</b><br>
+Hello<br>
+Hello<br>
+</section>
+<section style="display: inline-block;">
+   <b> s3 = '''Hello<br>
+World'''<br>
+print(s3) #Multiline string<br>
+<section id="code">
+Output<br>
+Hello<br>
+World<br>
+</section>
+</b>
+</b>
+</section>
+<p style="display:inline-block; width: 30%; background-color: skyblue; position: absolute; right:0px;">
+    <b>Note:</b><br>
+We can use triple quotes to create docstrings and/or multiline strings.
+    </p>
+<h3>
+    Accessing Characters in a String
+</h3>
+<p>
+    String indices start at 0 and go on till 1 less than the length of the string. We can use
+the index operator [ ] to access a particular character in a string.
+<br>
+Python allows negative indexing for strings. The index of -1 refers to the last
+character, -2 to the second last character, and so on. The negative indexing starts
+from the last character in the string. Eg.
+<br>
+<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--A7oqOWqx--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/1wr90mjnil60r7226bgq.png">
+</p>
+<h3>
+    Concatenation Of Strings
+</h3>
+<P style="display: inline-block;">
+    Joining of two or more strings into a single string is called string concatenation. The
++ operator does this in Python.
+# Python String Operations<BR>
+ <p style="display:inline-block; width: 30%; background-color: skyblue; position: absolute; right:0px;">
+        You cannot combine numbers and strings using the + operator. If you do so,
+        you will get an error
+</p>
+<p>
+str1 = 'Hello'<BR>
+str2 ='World!'<BR>
+# using +<BR>
+print(str1 + str2)<BR>
+When we run the above program, we get the following output:
+<section id="code">
+    str1 + str2 = HelloWorld!
+</section>
+<table>
+    <td>Question 1</td>
+    <td>What will the output of following code?<br>
+        s = "abcd"<br>
+        b = s + 2<br>
+        print(b)<br>
+    </td>
+    <td>
+        <abv title="error"><input type="text" value="Solution" disabled></abv>
+    </td>
+
+</table>
+</P>
+<h3>String Slicing</h3>
+<p>
+String slicing refers to accessing a specific portion or a subset of a string with the
+original string remaining unaffected. You can use the indexes of string characters to
+create string slices as per the following syntax:
+<br>
+<b>slice= &lt;String Name&gt;[StartIndex : StopIndex : Steps]</b>
+<ul>
+    <li>The StartIndex represents the index from where the string slicing is
+        supposed to begin. Its default value is 0, i.e. the string begins from index 0 if no StartIndex is specified.</li>
+        <li>The StopIndex represents the last index up to which the string slicing will go
+            on. Its default value is (length(string)-1) or the index of the last character
+            in the string.</li>
+        <li>steps represent the number of steps. It is an optional parameter. steps, if
+            defined, specifies the number of characters to jump over while counting
+            from StartIndex to StopIndex. By default, it is 1.
+            </li>
+        <li>
+            The string slices created, include characters falling between the indexes
+StartIndex and StopIndex, including StartIndex and not including
+StopIndex
+        </li>
+</ul>
+<p>
+<b>
+    s = "abcdefghi"
+print(s[2:7])
+<br>
+we get the output as:
+cdefg
+</b>
+<b>
+s = "abcdefghi"<br>
+print(s[-7:-2])<br>
+Thus, we get the output as:<br>
+cdefg<br>
+s = "abcdefghi"<br>
+print(s[2:7:2])<br>
+The output will be:<br>
+ceg
+</b>
+<br>
+You can even specify a negative step size<br>
+<b>
+# Print every 2nd item between position 6 to 1<br>
+s = "abcdefghi"<br>
+print(s[6:1:-2])<br>
+The output will be:<br>
+gec<br>
+print(s[:3])<br>
+abc
+</b>
+<table>
+    <td>
+        Question 2
+    </td>
+    <td>
+        What will be the output of the following code?<br>
+s = "abcdef"<br>
+print (s[2:])<br>
+    </td>
+    <td>
+        <abv title="cdef"><input type="text" value="Solution" disabled></abv>
+    </td>
+</table>
+
+</p>
+<h3>
+    Iterating On Strings
+</h3>
+<p>
+There are multiple ways to iterate over a string in Python.<br>
+<br>
+<header>Using for loop</header><br>
+<p><b>
+s="13579"<br>
+# Using for loop<br>
+for i in li:<br>
+ print(i) #Print the character in the string<br>
+</b>
+<br>
+Output:
+<section id="code">
+1<br>
+3<br>
+5<br>
+7<br>
+9<br>
+</section>
+<p>
+You can even use while() loops. Try using the while() loops on your own.
+
+</p>
+<h3>
+    For a given string(str), Write a program to remove all the consecutive duplicate characters.
+</h3>
+<section id="code" style="height:auto">
+SOLUTION: s=input()<br>
+li=list(s)<br>
+count=0<br>
+for i in range(len(s)):<br>
+    if i!=len(s)-1:<br>
+        if s[i]==s[i+1]:<br>
+            li.pop(i-count)<br>
+            count=count+1<br>
+str=''<br>
+for x in li:<br>
+&emsp;str=str+x<br>
+&emsp;print(str)
+    </section>
+
+</body>
+</html>

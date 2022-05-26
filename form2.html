@@ -1,0 +1,101 @@
+<!DOCTYPE html>    
+<html>    
+<head>
+    <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginpage.css">   
+    <title>Login Form</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+}
+.header{
+    min-height:100vh;
+    width:100%;
+    background-image:url("https://www.sagatraining.ca/wp-content/uploads/2018/10/background-images-for-login-form-8.jpg");
+    background-position:center;
+    background-size:cover;
+    position:relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{  
+    text-align: left;  
+    color: yellow;
+    font-size:100%;  
+    padding: 30px;  
+} 
+label{  
+    color: brown;  
+    font-size: 17px;  
+}  
+#Uname{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 5px;  
+    padding-left: 15px;  
+}  
+#Pass{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 5px;  
+    padding-left: 15px;  
+      
+}  
+#log{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: blue;  
+  
+  
+} 
+span{  
+    color: white;  
+    font-size: 17px;  
+}  
+a{  
+    background-color: blue;  
+}
+    </style>       
+</head>    
+<body>
+    <div style="font-size: 30px;">
+        <table style="background-color: white;">
+        <tr style="color:red">
+        <td rowspan="2" >C</td>
+        <td></td>
+        </tr>
+        <tr>
+            <td  style="color: black">oding School</td>
+        </tr>
+      </table>
+    <section class="header">  
+    <h2>Login Page</h2><br>
+    <nav>
+    <div class="login">    
+    <form id="login" method="get" action="login.php">    
+        <label><b>User Name     
+        </b>    
+        </label>    
+        <input type="text" name="Uname" id="Uname" placeholder="Username">    
+        <br><br>    
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+        <br><br>    
+        <input type="button" name="log" id="log" value="Log In Here">       
+        <br><br>    
+        <input type="checkbox" id="check">    
+        <span>Remember me</span>    
+        <br><br>    
+        Forgot <a href="#">Password</a>    
+    </form>     
+</div>  
+</nav>  
+</body>    
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>introduction</title>
+    <link rel="stylesheet" href="intro.css">
+    <style>
+            nav{
+    display: flex;
+    position: fixed;
+    background-color: black;
+    color: white;
+    height:3.8vw;
+    width:100%
+}
+#im{background-image: url("https://coolwallpapers.me/picsup/2919503-code-programming___mixed-wallpapers.jpg");
+}
+input[type="submit"]:hover{
+    background-color: blueviolet;
+}
+input[type="text"]:hover{
+    background-color: blue;
+    font-weight: bolder;
+}
+input[type="text"]{
+    background-color: orange;
+    color:white
+}
+.curri{
+    color: white;
+    text-decoration: none;
+}
+.curri:hover{
+    color:orange
+}
+    </style>
+</head>
+<body>
+    <nav id="nav" style="display: flex; align-items: center; justify-content: space-between;">
+        <div style="font-size: 30px;">
+            <table style="background-color: white;">
+            <tr style="color:red">
+            <td rowspan="2" >C</td>
+            <td></td>
+            </tr>
+            <tr>
+                <td  style="color: black">oding School</td>
+            </tr>
+        </table>
+        </div>
+        <div>
+            <a href="homepage.html" class="curri"> HOME </a>
+        </div>
+        <diV>
+            <a class="curri" href="form2.html">
+                LOGIN
+            </a>
+        </diV>
+        <div>
+            <a  href="form.html" id="join">
+            <input type="text" value="Enrol now"  style="text-align:center; width:300px; height: 40px; cursor: pointer;" disabled>
+            </a>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+
+    <h1>INTRODUCTION TO PYTHON <img src="https://www.321webmarketing.com/wp-content/uploads/2018/06/Python-language-symbol.jpg" id="img1"></h1>
+    <hr>
+    <p>python is an easy-to-learn and a powerful Object-Oriented Programming language. It is a very high-level programming language.</p>
+    <h3>Why Python?</h3>
+    <ol>
+        <li>
+            <b>Easy to Use:</b> Python is comparatively an easier-to-use language as compared to other programming languages.
+        </li>
+        <li>
+            <b>Expressive Language:</b> The syntax of Python is closer to how you would write pseudocode. Which makes it capable of expressing the code’s purpose better than many other languages.
+        </li>
+        <li>
+            <b>Interpreted Language:</b> Python is an interpreted language; this means that the Python installation interprets and executes the code a line-at-a-time.
+        </li>
+        <li>
+            Python is one of the most popular programming languages to be used in <b>Web Development</b> owing to the variety of Web Development platforms built over it like Django, Flask, etc.
+        </li>
+    </ol></p>
+    <h3>
+        Python Download
+    </h3>
+    <p>
+        The very first step towards Python Programming would be to download the tools required to run the Python language. We will be using Python 3 for the course. You can download the latest version of Python 3 from <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>
+    </p>
+    <h3>
+        First Program in Python
+    </h3>
+    <p>
+        <b>In[] : print(&lt;Objects&gt;)</b>
+            <br>
+        <b>Example</b>If we want to print “Hello, World!” in our code, we will write it in the following way:-
+        <br>
+        <b>In[] : print(<mark>"Hello, World!"</mark>)</b>
+        <br>
+        <br>
+        <br>
+        <img src="https://howtodoinjava.com/wp-content/uploads/2020/07/Python-Hello-world-program.png">
+        
+    </p>
+    <fieldset>
+    <table>
+    <td><b>Question 1:</b></td>
+    <td>What will the following code segment print?
+    <br>
+    print(“Career”)<br>
+    print(“Labs”)
+    </td>
+    <td>
+    <abv title="Career Labs"><input type="text" value="Solution" disabled></abv>
+    </td>
+</table>
+    </fieldset>
+<h3>
+    VARIABLES
+</h3>
+<P>
+    A variable in Python represents a named location that refers to value and whose values can
+be used and processed during the program run. In other words, variables are labels/names
+to which we can assign value and use them as a reference to that value throughout the
+code.
+</P>
+<header>
+    How are Values Assigned to A Variable?
+</header>
+<p>
+    Values are assigned to a variable using a special symbol “=”, called the assignment
+operator. An operator is a symbol, like = or +, that performs some operation on one or
+more values. For example, the + operator takes two numbers, one to the left of the
+operator and one to the right, and adds them together. Likewise, the “=” operator takes a
+value to the right of the operator and assigns it to the name/label/variable on the left of the
+operator.
+<br>
+<b>For Example:</b> Now let us create a variable namely Student to hold a student’s name and a
+variable Age to hold a student’s age.
+<br>
+<b>>>> Student = "Jacob"<br>
+    >>> Age = 19
+</b>
+<header>
+    Naming a Variable
+</header>
+<p>
+    <ul>
+        <li>Variable names can contain letters, numbers, and underscores.</li>
+        <li>They cannot contain spaces.</li>
+        <li>Variable names cannot start with a number.</li>
+        <li>Variable names are case sensitive. For example:- The variable names Temp and temp are different.</li>
+        <li>While writing a program, creating self-explanatory variable names help a lot in increasing the readability of the code. However, too long names can clutter up the program and make it difficult to read.</li>
+    </ul>
+</p>
+<header>Python Variables in Memory</header>
+<p>
+    Python variables are not created in the form most other programming languages do. These variables do not have fixed locations, unlike other languages. The locations they refer/point to changes every time their value changes.Python preloads some commonly used values in an area of memory. This memory space has values/literals at defined memory locations and all these locations have different addresses.
+    <br>
+    When we give the command, Age = 20, the variable Age is created as a label pointing to a memory location where 20 is already stored. If 20 is not present in any of the memory locations, then 20 is stored in an empty memory location with a unique address and then the Age is made to point to that memory location.
+    <br>
+    Now, when we give the second command, Age = 30, the label Age will not have the same location as earlier. Now it will point to a memory location where 30 is stored. So this time the memory location for the label Age is changed.
+    <br>
+    <img id="img2" src="https://www.go4expert.com/tutorials/wp-content/uploads/2018/03/Python-tutorials-Variable-Declaration-and-Initialization-Go4Expert-1.jpg">
+</p>
+<table>
+    <td>
+        <b>Question 2</b>
+    </td>
+    <td>
+        What will be the result of following code in Python ?<br>
+        x = 10<br>
+        x = "abcd"<br>
+        print(x)?
+    </td>
+    <td>
+        <abv title="abcd"><input type="text" value="solution" disabled></abv>
+    </td>
+</table>
+<h3>
+    DATA-TYPES
+</h3>
+<P>
+    Data types are the classification or categorization of data items. Data types
+represent a kind of value that determines what operations can be performed on
+that data. Numeric, non-numeric, and Boolean (true/false) data are the most used
+data types. However, each programming language has its classification largely
+reflecting its programming philosophy. Python offers the following built-in data
+types:
+</P>
+<UL>
+    <LI>Numbers</LI>
+    <UL>
+    <LI>Floating Point Numbers</LI>
+    <LI>Integers</LI>
+    <LI>Complex Numbers</LI>
+    </UL>
+    <LI>Strings
+    </LI>
+    <LI>Boolean Values
+    </LI>
+    <LI>
+        List, Tuple, and Dictionary
+    </LI>
+</UL>
+<BR>
+<Img src="https://www.theengineeringprojects.com/wp-content/uploads/2020/06/Datatypes-in-python.jpg">
+<img src="https://files.realpython.com/media/Basic-Data-Types-in-Python_Watermarked.49e17138407b.jpg">
+</p>
+<h3>
+    Arithmetic Operators in Python
+</h3>
+<div id="ao" style="display: flex;">
+<div style="background-color: red;">
+<img src="https://www.engineeringbigdata.com/wp-content/uploads/python-arithmetic-operators.jpg" style="height:100%; width: 100%;">
+</div>
+<div style="width:50%; border:5px solid purple">
+    <p>
+    Let us see how these operators work:-<br>
+In[] : print(5 + 2) # Addition<br>
+Out[] : 7<br>
+In[] : print(5 - 2) # Subtraction<br>
+Out[] : 3<br>
+In[] : print(5 * 2) # Multiplication<br>
+Out[] : 10<br>
+In[] : print(5 / 2) # Floating Point Division<br>
+Out[] : 2.5<br>
+In[] : print(5 // 2) # Floor Division<br>
+Out[] : 2 # 5 divided by 2 gives 2.5 and value of floor(2.5) is 2<br>
+In[] : print(5 ** 2) # Calculate Exponent<br>
+Out[] : 25 # 5 raised to the power of 2 is 25<br>
+In[] : print(5 % 2) # Modulus<br>
+Out[] : 1 # Remainder 1 is left after dividing 5 by 2<br>
+</p>
+</div>
+</div>
+<h3>
+    How to take User Input?
+</h3>
+<p style="width:60%; vertical-align: top;">
+    To get the input from the user interactively, we can use the built-in function, input(). This
+function is used in the following manner:<br>
+<b>variable_to_hold_the_input_value = input(Prompt to be displayed)</b>
+<br>
+<p style="display: inline-block;">
+<b>
+Let us take an example:-<br>
+In[] : age= int(input("Enter Your Age: "))<br>
+Enter Your Age: 19<br>
+In[] : age<br>
+Out[] : 19<br>
+Here, the output will be 19 and not '19', i.e. the output is an Integer and not a String<br>.
+Similarly, if we want to read a floating-point number, we can do the following:-<br>
+In[] : weight= float(input("Enter Your Age: "))<br>
+Enter Your Weight: 65.5<br>
+In[] : weight<br>
+Out[] : 65.5<br>
+</b>
+</p>
+<p style="display:inline-block; width: 30%; background-color: skyblue; position: absolute; right:0px;">
+    Note:- input() function always returns a value of the String type. Notice that in the
+above script the output for both name and age, Python has enclosed the output in quotes,
+like 'Rishabh' and '19', which implies that it is of String type. This is just because,
+whatever the user inputs in the input() function, it is treated as a String. This would
+mean that even if we input an integer value like 20, it will be treated like a string '19' and
+not an integer. Now, we will see how to read Numbers in the next section
+</p>
+<table style="display: block;">
+    <td>Question 3</td>
+    <td>What will be the output of the code if input provided is “abc” and “def”?<br>
+        a = int(input())<br>
+        b=int(input())<br>
+        C = a+b<br>
+        print(C)<br></td>
+    <td>
+        <abv title="Value Error"><input type="text"  value="solution" disabled></abv>
+    </td>
+</table>
+<br>
+<h3>
+    Write a program to input marks of three tests of a student (all integers). Then calculate and print the average of all test marks.
+</h3>
+<code>
+<table style="background-color: black; width: 30%; " id="avg" >
+    <tr>
+        <td>
+        Solution:
+        </td>
+    </tr>
+    <tr>
+        <td>a=int(input())</td>
+    </tr>
+    <tr>
+        <td>b=int(input())</td>
+    </tr>
+    <tr>
+        <td>c=int(input())</td>
+    </tr>
+    <tr>
+        <td>av=(a+b+c)/3</td>
+    </tr>
+    <tr>
+        <td>print(av)</td>
+    </tr>
+</code>
+</table>
+
+
+</body>
+</html>

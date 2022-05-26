@@ -1,0 +1,311 @@
+[15:11, 12/24/2021] Riya Khillan: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Functions </title>
+  <style>
+     *{
+    margin:0;
+    padding:0;
+}
+.header{
+    min-height:100vh;
+    width:100%;
+    background-image:url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+    background-position:center;
+    background-size:cover;
+    position:relative;
+    font-family:cursive;
+}
+nav{
+    display:flex;
+    padding:1% 4%;
+    justify-content:space-between;
+    align-items:center;
+}
+.nav-links {
+    flex:1;
+    text-align:right;
+}
+.nav-links a{
+color:red
+}
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    padding:8px 12px;
+    position:relative;
+    font-color:yellow;
+}
+.nav-hints{
+    list-style:none;
+    display:inline-block;
+    padding:8px 12px;
+    position:relative
+
+}
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+.row {
+        display: flex;
+      }
+  </style>
+</head>
+    <link rel="stylesheet" href="functions.css">
+<body>
+    <section class="header">
+    <nav style="display: flex;">
+    <div style="font-size: 30px; width:30%">
+        <table style="background-color: white; font-size: 40px;">
+        <tr style="color:red">
+        <td rowspan="2" >C</td>
+        <td></td>
+        </tr>
+        <tr>
+            <td  style="color: black">oding School</td>
+        </tr>
+      </table>
+      </div>
+      <div class="nav-links">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">PRACTICE</a></li>
+            <li><a href="">CURRICULAM</a></li>
+            <li><a href="">LOGIN</a></li>
+        </ul>
+        </div>
+    <div class="nav-hints">
+        <a  href="form.html" id="join">
+        <input type="text" value="Enrol now"  style="text-align:center; width:300px; height: 40px; cursor: pointer;" disabled>
+        </a>
+    </div>
+    </nav>
+
+<h1 style="color: red;text-align:center" > Functions </h1>
+<hr>
+<h3>What Is A Function?</h3>
+    <p>A Function is a sequence of statements/instructions that performs a particular task.
+        A function is like a black box that can take certain input(s) as its parameters and
+        can output a value after performing a few operations on the parameters. A function
+        is created so that one can use a block of code as many times as needed just by
+        using the name of the function.</p>
+        <br>
+<h3>Why Do We Need Functions?</h3>
+        <ul>
+            <li>Reusability: Once a function is defined, it can be used over and over again.
+                    You can call the function as many times as it is needed. Suppose you are
+                    required to find out the area of a circle for 10 different radii. Now, you can
+                    either write the formula πr2 10 times or you can simply create a function that
+                    takes the value of the radius as an input and returns the area corresponding
+                    to that radius</li>
+            <li>Neat code: A code containing functions is concise and easy to read.</li>
+            <li>Modularisation: Functions help in modularizing code. Modularization means
+                dividing the code into smaller modules, each performing a specific task.</li>
+            <li>Easy Debugging: It is easy to find and correct the error in a function as
+                compared to raw code.</li>
+        </ul>
+        <br>
+<h3>Defining Functions In Python</h3>
+        <p>A function, once defined, can be invoked as many times as needed by using its
+            name, without having to rewrite its code.
+            A function in Python is defined as per the following syntax:</p>
+            <br>
+         <img src="https://www.guru99.com/images/Pythonnew/Python10.2.png" width="300" height="200">
+    <ul>
+        <br>
+        <li>Function blocks begin with the keyword def followed by the function name
+            and parentheses ( ( ) ).
+            </li>
+        <li> The input parameters or arguments should be placed within these
+            parentheses. You can also define parameters inside these parentheses.
+            </li>
+        <li>The first statement of a function is optional - the documentation string of the
+            function or docstring. The docstring describes the functionality of a
+            function</li>
+        <li> The return statement exits a function, optionally passing back an
+            expression/value to the function caller.
+            </li>
+    </ul>
+    <br>
+<h3> The return Statement</h3>
+    <p>A return statement is used to end the execution of the function call and it “returns”
+        the result (value of the expression following the return keyword) to the caller. The
+        statements after the return statements are not executed. If the return statement is
+        without any expression, then the special value None is returned.
+        </p>
+        <br>
+        <img src="https://www.stechies.com/userfiles/images/with_return.webp" width="300" height="200">
+        <br>
+    <p>In the example given above, the sum a+b is returned.</p>
+    <br>
+    <abv title=" In Python, you need not specify the return type i.e. the data type of returned
+    value"><button name="button" value="OK" type="button">Note:</button></abv>
+<h3>Calling/Invoking A Function</h3>
+    <p>Once you have defined a function, you can call it from another function, program,
+        or even the Python prompt. To use a function that has been defined earlier, you
+        need to write a function call.
+        <br>
+        A function call takes the following form:
+    </p>
+    <br>
+    <img src="https://www.guru99.com/images/Pythonnew/Python10.1.png" width="300" height="200">
+    <br>
+    <p>The function definition does not execute the function body. The function gets
+        executed only when it is called or invoked.
+        <br>
+        add(5,7)
+        In this function call, a = 5 and b = 7.
+    </p>
+    <br>
+<h3>Arguments And Parameters</h3>
+    <p>As you know that you can pass values to functions. For this, you define variables to
+        receive values in the function definition and you send values via a function call
+        statement. For example, in the add() function, we have variables a and b to receive
+        the values and while calling the function we pass the values 5 and 7. We can define
+        these two types of values:
+        </p>
+    <ul>
+        <li>Arguments: The values being passed to the function from the function call
+            statement are called arguments. Eg. 5 and 7 are arguments to the add()
+            function.</li>
+        <li>Parameters: The values received by the function as inputs are called
+            parameters. Eg. a and b are the parameters of the add() function.
+            </li>
+    </ul>
+    <br>
+<h3>Types Of Functions</h3>
+    <p>We can divide functions into the following two types:</p>
+    <ol>
+        <li> User-defined functions: Functions that are defined by the users. Eg. The
+            add() function we created.
+            </li>
+        <li>Inbuilt Functions: Functions that are inbuilt in python. Eg. The print()
+            function.</li>
+    </ol>
+    <br>
+<h3>Scope Of Variables</h3>
+    <p>All variables in a program may not be accessible at all locations in that program.
+        Part(s) of the program within which the variable name is legal and accessible, is
+        called the scope of the variable. A variable will only be visible to and accessible by
+        the code blocks in its scope.
+        <br>
+        There are broadly two kinds of scopes in Python −
+        <ul>
+            <li>Global scope</li>
+            <li>Local scope</li>
+        </ul>
+        </p>
+        <br>
+<h4>Global Scope</h4>
+    <p>A variable/name declared in the top-level segment (_main_) of a program is said
+        to have a global scope and is usable inside the whole program (Can be accessed
+        from anywhere in the program).
+        In Python, a variable declared outside a function is known as a global variable. This
+        means that a global variable can be accessed from inside or outside of the function.
+        </p>
+        <br>
+<h4>Local scope</h4>
+    <p>Variables that are defined inside a function body have a local scope. This means
+        that local variables can be accessed only inside the function in which they are
+        declared.</p>
+        <br>
+<h3>The Lifetime of a Variable</h3>
+    <p>The lifetime of a variable is the time for which the variable exists in the memory.</p>
+    <br>
+    <ul>
+        <li>The lifetime of a Global variable is the entire program run (i.e. they live in the
+            memory as long as the program is being executed).</li>
+        <li>The lifetime of a Local variable is their function’s run (i.e. as long as their
+            function is being executed).</li>
+    </ul>
+    <br>
+<h3>Creating a Global Variable</h3>
+    <p>Consider the given code snippet:</p>
+    <br>
+    <img src="https://d33wubrfki0l68.cloudfront.net/75fecbf3b403c79761ad560bc1f01fd585231122/913fc/wp-content/2019/03/python-global-variable-scope.png" width="300" height="200">
+    <p>Here, we created a global variable y = "Global Variable". Then, we created a
+        function foo to print the value of the global variable from inside the function</p>
+        <br>
+<h4>What if you want to change the value of a Global Variable from inside a
+    function?</h4>
+    <p>Consider the code snippet:</p>
+    <br>
+    <img src="https://www.guru99.com/images/Pythonnew/Python5.4.png" width="300" height="200">
+    <br>
+<h3>Creating a Local Variable</h3>
+    <p>We declare a local variable inside a function. Consider the given function definition:</p>
+    <br>
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200419223644/f117-300x191.png" width="300" height="200">
+    <br>
+<h3>Accessing A Local Variable Outside The Scope</h3>
+    <div class="row">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4hodGss-qoWib5y6xpGt96KkPsWIXJYGRIw&usqp=CAU" width="300" height="200">
+    </div>
+        <br>
+    <p>In the above code, we declared a local variable y inside the function foo(), and
+        then we tried to access it from outside the function.</p>
+        <br>
+<h3>Global Variable And Local Variable With The Same Name</h3>
+<br>
+    <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Variable-scope-in-C.png" width="300" height="200">
+    <br>
+    <p>In this, we have declared a global variable r = 5 outside the function foo(). Now,
+        inside the function foo(), we re-declared a local variable with the same name, r.
+        Now, we try to print the values of r, inside, and outside the function.</p>
+        <br>
+<h3>Python Default Parameters</h3>
+    <p>Function parameters can have default values in Python. We can provide a default
+        value to a parameter by using the assignment operator (=). Here is an …
+[15:11, 12/24/2021] Riya Khillan: html function
+[15:11, 12/24/2021] Riya Khillan: *{
+    margin:0;
+    padding:0;
+}
+.header{
+    min-height:100vh;
+    width:100%;
+    background-image:url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+    background-position:center;
+    background-size:cover;
+    position:relative;
+    font-family:cursive;
+}
+nav{
+    display:flex;
+    padding:1% 4%;
+    justify-content:space-between;
+    align-items:center;
+}
+.nav-links {
+    flex:1;
+    text-align:right;
+}
+.nav-links a{
+color:red
+}
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    padding:8px 12px;
+    position:relative;
+    font-color:yellow;
+}
+.nav-hints{
+    list-style:none;
+    display:inline-block;
+    padding:8px 12px;
+    position:relative
+
+}
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+.row {
+        display: flex;
+      }
